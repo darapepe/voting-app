@@ -150,7 +150,7 @@ export default function App() {
   const isAdmin  = canManageVotantes(rol)
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)', maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)', maxWidth: '100%', margin: '0 auto' }}>
 
       {/* ── Header ── */}
       <div style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(10,14,26,0.96)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)', padding: '14px 20px 0' }}>
@@ -193,7 +193,7 @@ export default function App() {
       </div>
 
       {/* ── Contenido ── */}
-      <div style={{ flex: 1, padding: '20px', paddingBottom: '32px' }}>
+      <div style={{ flex: 1, padding: '12px clamp(8px, 3vw, 20px)', paddingBottom: '32px' }}>
         {error && (
           <div style={{ background: 'var(--red-bg)', border: '1px solid var(--red-border)', borderRadius: 'var(--radius)', padding: '16px', fontSize: '14px', color: 'var(--red)', marginBottom: '16px', textAlign: 'center' }}>
             ⚠️ {error}
