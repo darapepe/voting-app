@@ -98,7 +98,7 @@ export default function LoginScreen({ onLogin }) {
             <div style={{ position: 'relative' }}>
               <span style={iconStyle}>🔒</span>
               <input
-                type={showPass ? 'text' : 'password'} placeholder="••••••••"
+                type={showPass ? 'text' : 'password'} placeholder="digite su clave"
                 value={password} onChange={e => setPassword(e.target.value)} onKeyDown={handleKey}
                 style={{ ...inputStyle, paddingRight: '44px' }}
                 onFocus={e => e.target.style.borderColor = 'var(--accent)'}
